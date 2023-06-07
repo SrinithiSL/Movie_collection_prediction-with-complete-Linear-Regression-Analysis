@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta nem="viewport" content=""width=device-width, initial-scale="1.0">
+        <title>Movie Collection Prediction</title>
+    </head>
+    <body style="background: #000;">
+    <div class="login">
+        <h1 style="color:violet;">Movie Collection Prediction</h1>
+        <form action="{{url_for('predict')}}"method='post'>
+            <input type="text" name="Marketing expense"placeholder="Marketing expense" required="required"/> <br>
+            <input type="text" name="Production expense"placeholder="Production expense" required="required"/> <br>
+            <input type="text" name="Multiplex coverage"placeholder="Multiplex coverage"required="required"/> <br>
+            <input type="text" name="Budget"placeholder="Budget" required="required"/> <br>
+            <input type="text" name="Movie length"placeholder="Movie length" required="required"/> <br>
+            <input type="text" name="Lead actor rating"placeholder="Lead actor rating" required="required"/> <br>
+            <input type="text" name="Lead actress rating"placeholder="Lead actress rating" required="required"/> <br>
+            <input type="text" name="Director rating"placeholder="Director rating" required="required"/> <br>
+            <input type="text" name="Producer rating"placeholder="Producer rating" required="required"/> <br>
+            <input type="text" name="Critic rating"placeholder="Critic rating" required="required"/> <br>
+            <input type="text" name="Trailer views"placeholder="Trailer views" required="required"/> <br>
+            <input type="text" name="Time taken"placeholder="Time taken" required="required"/> <br>
+            <input type="text" name="Twitter hashtags"placeholder="Twitter hashtags" required="required"/> <br>
+            <input type="text" name="Genre_comedy"placeholder="Genre_comedy" required="required"/> <br>
+            <input type="text" name="Genre_Drama"placeholder="Genre_Drama" required="required"/> <br>
+            <input type="text" name="Genre_thriller"placeholder="Genre_thriller" required="required"/> <br>
+            <input type="text" name="Avg age actors"placeholder="Avg age actors" required="required"/> <br>
+            <input type="text" name="Num_multiplex"placeholder="Num_multiplex" required="required"/> <br>
+            <input type="text" name="3d_available"placeholder="3d_available" required="required"/> <p>
+
+            <button type="submit" class="'btn btn-primary btn-block btn-large">Prediction of Movie Collection</button>   
+        </form>
+        <br>
+        <br><h4 style="color:violet;">
+        {{  prediction_text  }}</h4>
+    </div></body>
+</html>
